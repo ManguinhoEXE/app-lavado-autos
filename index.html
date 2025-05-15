@@ -1,364 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AquaRide</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/logo.png">
-    <title>AquaRide</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="/assets/logo.png" alt="AquaRide Logo">
-            <span class="title">AquaRide</span>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/logo.png" width="40" alt="Logo">
+                <span class="ms-2 h5 mb-0 text-blue">AquaRide</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#Caracteristicas">Características</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ComoFunciona">Cómo Funciona</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Beneficios">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
+                </ul>
+                <a href="#" class="btn btn-download d-flex align-items-center">
+                    <i class="bi bi-download me-1"></i> Descargar App
+                </a>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#Caracteristicas">Características</a></li>
-                <li><a href="#ComoFunciona">Cómo Funciona</a></li>
-                <li><a href="#Beneficios">Beneficios</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="btn-download">
-            <i class="bi bi-download"></i> Descargar App
-        </a>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-text">
-                <h1>
-                    <span class="text-blue">Control inteligente</span> <br>
-                    <span class="text-black">para tu lavadero</span>
-                </h1>               <p>Optimiza la gestión de tu lavadero de autos con <br> nuestra plataforma completa. Registra servicios,<br> clientes, vehículos y más.</p>
-                <div class="buttons">
-                    <a href="#" class="btn-primary">
-                        <i class="bi bi-download"></i> Descargar App
-                    </a>
-                    <a href="#" class="btn-secondary">Ver Demostración</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="/assets/logo.png" alt="Car Image">
-            </div>
-        </section>
+    </nav>
 
-        <section class="tools" id="Caracteristicas">
-            <div class="container text-center mt-5">
-                <h2 class="section-title text-black">Todas las herramientas que necesitas</h2>
-                <p class="section-subtitle">AquaRide te ofrece una suite completa de funcionalidades para optimizar la gestión de tu lavadero de autos.</p>
-                <div class="row g-4">
-                    <div class="col-md-3">
-                        <div class="tool-card">
-                            <i class="bi bi-bar-chart-fill"></i>
-                            <h3>Dashboard Principal</h3>
-                            <p>Visualiza ingresos diarios/mensuales, servicios realizados y lista de carros atendidos hoy.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="tool-card">
-                            <i class="bi bi-car-front-fill"></i>
-                            <h3>Clientes y Vehículos</h3>
-                            <p>Gestiona clientes con datos detallados e historial de servicios por vehículo.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="tool-card">
-                            <i class="bi bi-plus-circle-fill"></i>
-                            <h3>Nuevo Servicio</h3>
-                            <p>Registra nuevos servicios con detalles de lavado, observaciones y método de pago.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="tool-card">
-                            <i class="bi bi-clock-history"></i>
-                            <h3>Historial de Servicios</h3>
-                            <p>Accede al historial completo de todos los servicios realizados.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="tool-card">
-                            <i class="bi bi-currency-dollar"></i>
-                            <h3>Reportes Financieros</h3>
-                            <p>Genera reportes detallados sobre tus ingresos y operaciones financieras.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="tool-card">
-                            <i class="bi bi-star-fill"></i>
-                            <h3>Reportes de Calidad</h3>
-                            <p>Analiza la satisfacción de tus clientes y la calidad de tus servicios.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="tool-card">
-                            <i class="bi bi-list-task"></i>
-                            <h3>Gestión de Precios</h3>
-                            <p>Administra y actualiza los precios de tus servicios fácilmente.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="tool-card">
-                            <i class="bi bi-gear-fill"></i>
-                            <h3>Configuración</h3>
-                            <p>Personaliza la aplicación según las necesidades de tu negocio.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main class="flex-shrink-0" style="padding-top:80px;">
 
-        <section class="how-it-works" id="ComoFunciona">
-            <div class="container text-center mt-5">
-                <h2 class="section-title text-black">Cómo funciona AquaRide</h2>
-                <p class="section-subtitle">Un proceso simple y efectivo para mejorar la gestión de tu negocio</p>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="step-card">
-                            <div class="step-number">01</div>
-                            <h3 class="text-black">Registra Clientes y Vehículos</h3>
-                            <p>Crea una base de datos completa con todos los datos de tus clientes y sus vehículos, incluyendo historial de servicios.</p>
-                            <ul>
-                                <li>Búsqueda por placa</li>
-                                <li>Datos de contacto</li>
-                                <li>Detalles del vehículo</li>
-                                <li>Notas adicionales</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="step-card">
-                            <div class="step-number">02</div>
-                            <h3  class="text-black">Gestiona Servicios</h3>
-                            <p>Registra nuevos servicios, asigna responsables y mantén un seguimiento detallado de cada operación.</p>
-                            <ul>
-                                <li>Tipos de lavado</li>
-                                <li>Observaciones</li>
-                                <li>Asignación de personal</li>
-                                <li>Seguimiento de pagos</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="step-card">
-                            <div class="step-number">03</div>
-                            <h3  class="text-black">Analiza Resultados</h3>
-                            <p>Visualiza reportes financieros y de calidad para tomar decisiones basadas en datos reales de tu negocio.</p>
-                            <ul>
-                                <li>Ingresos diarios/mensuales</li>
-                                <li>Satisfacción del cliente</li>
-                                <li>Rendimiento de empleados</li>
-                                <li>Servicios más solicitados</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="benefits" id="Beneficios">
-            <div class="container mt-5">
+        <!-- HERO -->
+        <section class="py-5 bg-light">
+            <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <h2 class="section-title text-black">Beneficios que <span class="text-blue">transformarán</span> tu negocio</h2>
-                        <p class="section-subtitle">AquaRide no solo te ayuda a gestionar tu lavadero de autos, sino que transforma completamente la manera en que operas tu negocio, mejorando la eficiencia y la rentabilidad.</p>
-                        <div class="row g-3">
-                            <div class="col-12">
-                                <div class="benefit-item d-flex align-items-start">
-                                    <div class="icon">
-                                        <i class="bi bi-clock"></i>
-                                    </div>
-                                    <div>
-                                        <h3>Ahorro de Tiempo</h3>
-                                        <p>Automatiza procesos manuales y reduce el tiempo dedicado a tareas administrativas.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="benefit-item d-flex align-items-start">
-                                    <div class="icon">
-                                        <i class="bi bi-graph-up"></i>
-                                    </div>
-                                    <div>
-                                        <h3>Mayor Rentabilidad</h3>
-                                        <p>Optimiza recursos, controla gastos y aumenta la eficiencia operativa.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="benefit-item d-flex align-items-start">
-                                    <div class="icon">
-                                        <i class="bi bi-people"></i>
-                                    </div>
-                                    <div>
-                                        <h3>Fidelización de Clientes</h3>
-                                        <p>Mejora la experiencia del cliente con un servicio más personalizado y eficiente.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="benefit-item d-flex align-items-start">
-                                    <div class="icon">
-                                        <i class="bi bi-shield-check"></i>
-                                    </div>
-                                    <div>
-                                        <h3>Control Total</h3>
-                                        <p>Mantén el control de todos los aspectos de tu negocio desde una sola plataforma.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4">
-                            <a href="#" class="btn-primary">Descubre Más Beneficios</a>
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h1 class="fw-bold">
+                            <span class="text-blue">Control inteligente</span><br>
+                            <span>para tu lavadero</span>
+                        </h1>
+                        <p class="lead">Optimiza la gestión de tu lavadero de autos con nuestra plataforma completa.
+                            Registra servicios, clientes, vehículos y más.</p>
+                        <div class="d-grid d-sm-flex gap-2 justify-content-center justify-content-lg-start">
+                            <a href="#" class="btn btn-primary btn-lg d-flex align-items-center">
+                                <i class="bi bi-download me-2"></i> Descargar App
+                            </a>
+                            <a href="#" class="btn btn-success btn-lg">Ver Demostración</a>
                         </div>
                     </div>
-                    <div class="col-md-6 text-center">
-                        <img src="/assets/car.png" alt="Car Wash" class="img-fluid rounded">
+                    <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                        <img src="assets/logo.png" class="img-fluid rounded" alt="Car Wash">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="testimonials">
-            <div class="container text-center mt-5">
-                <h2 class="section-title text-black">Lo que nuestros clientes dicen</h2>
-                <p class="section-subtitle">Descubre cómo AquaRide ha transformado la gestión de lavaderos de autos en toda la región</p>
+
+        <!-- CARDS / HERRAMIENTAS -->
+        <section id="Caracteristicas" class="py-5">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-3">Todas las herramientas que necesitas</h2>
+                <p class="mb-4 text-secondary">AquaRide te ofrece una suite completa para optimizar tu lavadero.</p>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="testimonial-card">
-                            <div class="stars">
-                                ★★★★★
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <i class="bi bi-bar-chart-fill fs-1 text-blue mb-3"></i>
+                                <h5 class="card-title">Dashboard Principal</h5>
+                                <p class="card-text">Visualiza ingresos diarios/mensuales y servicios realizados.</p>
                             </div>
-                            <p class="testimonial-text">"Desde que implementamos AquaRide, hemos aumentado nuestra eficiencia en un 40%. La gestión de clientes y el seguimiento de servicios es ahora mucho más sencillo."</p>
-                            <h4  class="text-black">Carlos Rodríguez</h4>
-                            <p class="testimonial-role">Propietario, AutoSpa Express</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="testimonial-card">
-                            <div class="stars">
-                                ★★★★★
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <i class="bi bi-car-front-fill fs-1 text-blue mb-3"></i>
+                                <h5 class="card-title">Clientes y Vehículos</h5>
+                                <p class="card-text">Gestiona clientes con datos detallados e historial.</p>
                             </div>
-                            <p class="testimonial-text">"Los reportes financieros y de calidad nos han permitido identificar áreas de mejora que no habíamos notado antes. Totalmente recomendado para cualquier lavadero."</p>
-                            <h4  class="text-black">María González</h4>
-                            <p class="testimonial-role">Gerente, Clean Cars</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="testimonial-card">
-                            <div class="stars">
-                                ★★★★☆
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <i class="bi bi-plus-circle-fill fs-1 text-blue mb-3"></i>
+                                <h5 class="card-title">Nuevo Servicio</h5>
+                                <p class="card-text">Registra servicios con observaciones y pago.</p>
                             </div>
-                            <p class="testimonial-text">"La facilidad para registrar nuevos servicios y mantener un historial por vehículo ha mejorado significativamente nuestra relación con los clientes recurrentes."</p>
-                            <h4  class="text-black">Javier López</h4>
-                            <p class="testimonial-role">Dueño, Premium Wash</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <i class="bi bi-clock-history fs-1 text-blue mb-3"></i>
+                                <h5 class="card-title">Historial de Servicios</h5>
+                                <p class="card-text">Accede al registro completo de servicios.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <i class="bi bi-currency-dollar fs-1 text-blue mb-3"></i>
+                                <h5 class="card-title">Reportes Financieros</h5>
+                                <p class="card-text">Genera reportes detallados de ingresos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <i class="bi bi-star-fill fs-1 text-blue mb-3"></i>
+                                <h5 class="card-title">Reportes de Calidad</h5>
+                                <p class="card-text">Analiza satisfacción de clientes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <i class="bi bi-list-task fs-1 text-blue mb-3"></i>
+                                <h5 class="card-title">Gestión de Precios</h5>
+                                <p class="card-text">Administra y actualiza precios fácilmente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <i class="bi bi-gear-fill fs-1 text-blue mb-3"></i>
+                                <h5 class="card-title">Configuración</h5>
+                                <p class="card-text">Personaliza la aplicación a tu medida.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contact" id="Contacto">
-            <div class="container mt-5">
-                <h2 class="section-title text-black text-center">Contáctanos</h2>
-                <p class="section-subtitle text-center">¿Tienes preguntas sobre AquaRide? Estamos aquí para ayudarte.</p>
+
+        <!-- CÓMO FUNCIONA -->
+        <section id="ComoFunciona" class="py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-3">Cómo funciona AquaRide</h2>
+                <p class="text-secondary mb-4">Un proceso simple y efectivo</p>
                 <div class="row g-4">
-                    <div class="col-md-7">
-                        <form>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Nombre completo</label>
-                                <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded shadow-sm">
+                            <div class="step-number mx-auto">1</div>
+                            <h5>Registra Clientes y Vehículos</h5>
+                            <p>Crea una base de datos completa con historial de servicios.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded shadow-sm">
+                            <div class="step-number mx-auto">2</div>
+                            <h5>Gestiona Servicios</h5>
+                            <p>Asigna responsables y sigue cada operación al detalle.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded shadow-sm">
+                            <div class="step-number mx-auto">3</div>
+                            <h5>Analiza Resultados</h5>
+                            <p>Visualiza reportes financieros y de calidad para mejorar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section id="Beneficios" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-3">Beneficios que <span class="text-blue">transformarán</span> tu negocio
+                        </h2>
+                        <ul class="list-unstyled">
+                            <li class="d-flex mb-3">
+                                <i class="bi bi-clock fs-3 text-blue me-3"></i>
+                                <span>Ahorro de Tiempo: reduce tareas administrativas.</span>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <i class="bi bi-graph-up fs-3 text-blue me-3"></i>
+                                <span>Mayor Rentabilidad: controla gastos y optimiza recursos.</span>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <i class="bi bi-people fs-3 text-blue me-3"></i>
+                                <span>Fidelización de Clientes: servicio más personalizado.</span>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <i class="bi bi-shield-check fs-3 text-blue me-3"></i>
+                                <span>Control Total: monitorea tu negocio desde un solo lugar.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="assets/car.png" class="img-fluid rounded" alt="Car Wash">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS -->
+        <section class="py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-3">Lo que nuestros clientes dicen</h2>
+                <p class="text-secondary mb-4">Descubre cómo AquaRide ha transformado lavaderos en toda la región</p>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <div class="fs-2 text-warning mb-3">★★★★★</div>
+                                <p class="fst-italic">"Hemos aumentado nuestra eficiencia en un 40%. El seguimiento es
+                                    mucho más sencillo."</p>
+                                <h6 class="fw-bold mb-0">Carlos Rodríguez</h6>
+                                <small class="text-secondary">Propietario, AutoSpa Express</small>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="email" class="form-label">Correo electrónico</label>
-                                    <input type="email" class="form-control" id="email" placeholder="tu@email.com">
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="phone" class="form-label">Teléfono</label>
-                                    <input type="text" class="form-control" id="phone" placeholder="Tu número de teléfono">
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <div class="fs-2 text-warning mb-3">★★★★★</div>
+                                <p class="fst-italic">"Los reportes nos permitieron identificar áreas de mejora.
+                                    Totalmente recomendado."</p>
+                                <h6 class="fw-bold mb-0">María González</h6>
+                                <small class="text-secondary">Gerente, Clean Cars</small>
                             </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Mensaje</label>
-                                <textarea class="form-control" id="message" rows="4" placeholder="¿Cómo podemos ayudarte?"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <div class="fs-2 text-warning mb-3">★★★★☆</div>
+                                <p class="fst-italic">"Registrar nuevos servicios y mantener un historial es muy fácil
+                                    ahora."</p>
+                                <h6 class="fw-bold mb-0">Javier López</h6>
+                                <small class="text-secondary">Dueño, Premium Wash</small>
                             </div>
-                            <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="Contacto" class="py-5">
+            <div class="container">
+                <h2 class="fw-bold text-center mb-4">Contáctanos</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Nombre completo">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Correo electrónico">
+                            </div>
+                            <div class="col-12">
+                                <input type="tel" class="form-control" placeholder="Teléfono">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary px-5">Enviar Mensaje</button>
+                            </div>
                         </form>
                     </div>
-                    <div class="col-md-5">
-                        <div class="contact-info">
-                            <h3>Información de Contacto</h3>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <span>+1 (555) 123-4567</span>
-                                </li>
-                                <li>
-                                    <i class="bi bi-envelope-fill"></i>
-                                    <span>info@aquaride.com</span>
-                                </li>
-                                <li>
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                    <span>Av. Principal 123<br>Ciudad Central, CP 12345</span>
-                                </li>
-                            </ul>
-                            <h4>Síguenos</h4>
-                            <div class="social-icons">
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
-        <footer class="footer mt-5">
-            <div class="container ">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="footer-logo">
-                            <img src="/assets/logo.png" alt="AquaRide Logo">
-                            <p>Control inteligente para tu lavadero de autos.</p>
-                            <p>© 2025 AquaRide. Todos los derechos reservados.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h4>Producto</h4>
-                        <ul class="footer-links">
-                            <li><a href="#">Características</a></li>
-                            <li><a href="#">Cómo Funciona</a></li>
-                            <li><a href="#">Beneficios</a></li>
-                            <li><a href="#">Precios</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <h4>Empresa</h4>
-                        <ul class="footer-links">
-                            <li><a href="#">Sobre Nosotros</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Clientes</a></li>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <h4>Legal</h4>
-                        <ul class="footer-links">
-                            <li><a href="#">Términos de Servicio</a></li>
-                            <li><a href="#">Política de Privacidad</a></li>
-                            <li><a href="#">Cookies</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-bottom text-center">
-                    <p>Diseñado para optimizar la gestión de lavaderos de autos en todo el mundo.</p>
-                    <a href="#" class="back-to-top">
-                        <i class="bi bi-arrow-up-circle"></i>
-                    </a>
-                </div>
-            </div>
-        </footer>
+
     </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-auto bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-1">© 2025 AquaRide. Todos los derechos reservados.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-twitter fs-4"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+            </div>
+            <a href="#" class="text-white mt-3 d-inline-block"><i class="bi bi-arrow-up-circle fs-2"></i></a>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
